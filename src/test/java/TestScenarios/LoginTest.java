@@ -3,8 +3,6 @@ package TestScenarios;
 import OrangePages.OrangeHomePage;
 import OrangePages.OrangeLoginPage;
 import browserSetup.BrowserSetup;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BrowserSetup {
@@ -22,6 +20,7 @@ public class LoginTest extends BrowserSetup {
         objOrangeLoginPage = new OrangeLoginPage(driver);
         objOrangeLoginPage.veryHeader();
         objOrangeLoginPage.loginOrange(userName, password);
+        System.out.println(userName);
     }
 
 }
